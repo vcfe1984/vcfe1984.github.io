@@ -1,71 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to My Website</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f6f1">
+  <meta name="description" content="Biblioteca digital de recursos para la formación y la vida consagrada.">
+  <title>Biblioteca Digital · Recursos y aplicaciones</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#f8f6f1;--ink:#182b3c;--muted:#68727a;--gold:#b08a51;--line:#e7e2d8;--card:#fff;--shadow:0 18px 45px rgba(24,43,60,.055)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:'DM Sans',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+    .wrap{width:min(1100px,calc(100% - 44px));margin:auto}.top{display:flex;align-items:center;justify-content:space-between;padding:31px 0;border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:13px;text-decoration:none;color:var(--ink);font-weight:700;letter-spacing:.02em}.mark{display:grid;place-items:center;width:39px;height:39px;border:1px solid var(--gold);border-radius:50%;color:var(--gold);font-family:Georgia,serif;font-size:24px}.top small{color:var(--muted);font-size:12px;letter-spacing:.1em;text-transform:uppercase}
+    .hero{text-align:center;padding:98px 0 70px}.eyebrow{color:var(--gold);text-transform:uppercase;font-size:12px;letter-spacing:.25em;font-weight:700}.hero h1{font:500 clamp(46px,7vw,78px)/1.12 'Playfair Display',Georgia,serif;letter-spacing:-.035em;margin:20px 0}.hero p{color:var(--muted);font-size:17px;line-height:1.8;max-width:530px;margin:0 auto}.ornament{width:48px;height:2px;background:var(--gold);margin:34px auto 0}
+    .section-heading{display:flex;justify-content:space-between;align-items:baseline;gap:20px;margin-bottom:24px}.section-heading h2{font:500 27px 'Playfair Display',Georgia,serif;margin:0}.section-heading span{font-size:13px;color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;padding-bottom:100px}.card{position:relative;display:flex;flex-direction:column;min-height:248px;padding:34px 36px;background:var(--card);border:1px solid var(--line);border-radius:13px;color:inherit;text-decoration:none;box-shadow:var(--shadow);transition:transform .25s,border-color .25s,box-shadow .25s}.card:hover,.card:focus-visible{transform:translateY(-5px);border-color:#d4b98d;box-shadow:0 24px 55px rgba(24,43,60,.11)}.card:focus-visible{outline:3px solid var(--gold);outline-offset:4px}.icon{display:grid;place-items:center;width:49px;height:49px;border-radius:12px;background:#f5f0e8;color:#9d7740;font-size:23px;margin-bottom:22px}.card h3{font:500 25px 'Playfair Display',Georgia,serif;margin:0 0 9px}.card p{font-size:14px;line-height:1.7;color:var(--muted);margin:0;max-width:340px}.arrow{position:absolute;right:34px;bottom:31px;color:var(--gold);font-size:23px;transition:transform .2s}.card:hover .arrow{transform:translateX(5px)}footer{border-top:1px solid var(--line);padding:29px 0 35px;display:flex;justify-content:space-between;gap:15px;color:var(--muted);font-size:12px}footer span:last-child{color:var(--gold)}
+    @media(max-width:650px){.top{padding:22px 0}.top small{display:none}.hero{padding:75px 0 62px}.hero p{font-size:15px}.grid{grid-template-columns:1fr;gap:16px;padding-bottom:70px}.card{min-height:225px;padding:28px}.arrow{right:27px;bottom:25px}.section-heading h2{font-size:24px}footer{flex-direction:column}}
+    @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important}}
+  </style>
 </head>
 <body>
-    <header class="navbar">
-        <div class="container nav-container">
-            <a href="#" class="logo">My Brand</a>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
+  <div class="wrap">
+    <header class="top"><a class="brand" href="./" aria-label="Biblioteca Digital, inicio"><span class="mark" aria-hidden="true">✦</span><span>Biblioteca Digital</span></a><small>Formación · Espiritualidad · Consulta</small></header>
     <main>
-        <section class="hero">
-            <div class="container">
-                <h1>Hello, I'm Hosted on GitHub Pages</h1>
-                <p>Welcome to my main website domain!</p>
-                <button id="interactive-btn" class="btn">Click Me</button>
-            </div>
-        </section>
-
-        <section id="about" class="section">
-            <div class="container">
-                <h2>About This Site</h2>
-                <p>This is the personal landing page hosted at the root domain of GitHub Pages.</p>
-            </div>
-        </section>
-
-        <section id="projects" class="section bg-light">
-            <div class="container">
-                <h2>Projects</h2>
-                <div class="card-grid">
-                    <div class="card">
-                        <h3>Project One</h3>
-                        <p>A quick overview of what you built or accomplished.</p>
-                    </div>
-                    <div class="card">
-                        <h3>Project Two</h3>
-                        <p>Another highlight showing off your skills and interests.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="section">
-            <div class="container">
-                <h2>Get in Touch</h2>
-                <p>Feel free to reach out via GitHub or social links!</p>
-            </div>
-        </section>
+      <section class="hero" aria-labelledby="title"><div class="eyebrow">Un espacio para profundizar</div><h1 id="title">Conocer, meditar,<br>crecer.</h1><p>Una colección de recursos digitales para acompañar el estudio, la formación y la vida consagrada.</p><div class="ornament" aria-hidden="true"></div></section>
+      <section aria-labelledby="apps-title"><div class="section-heading"><h2 id="apps-title">Nuestras aplicaciones</h2><span id="count">4 recursos disponibles</span></div><div class="grid" id="app-grid"></div></section>
     </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Hosted with GitHub Pages.</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+    <footer><span>Biblioteca Digital · Un espacio de formación</span><span>Ad maiorem Dei gloriam</span></footer>
+  </div>
+  <script>
+    // Para añadir otra aplicación, copia uno de estos objetos y modifica sus datos.
+    const apps = [
+      {title:'Obras del P. Buela',description:'Escritos y obras para la lectura, el estudio y la reflexión.',icon:'✍',url:'https://vcfe1984.github.io/buela_obras/'},
+      {title:'Nuestro Carisma',description:'Una puerta de entrada a la espiritualidad y al carisma del Instituto.',icon:'✦',url:'https://vcfe1984.github.io/nuestro_carisma/'},
+      {title:'Derecho Propio IVE',description:'Documentos y textos normativos del Instituto del Verbo Encarnado.',icon:'⚖',url:'https://vcfe1984.github.io/derecho-IVE/'},
+      {title:'Derecho Propio SSVM',description:'Documentos y textos normativos de las Servidoras del Señor y de la Virgen de Matará.',icon:'❖',url:'https://vcfe1984.github.io/derecho-SSVM/'}
+    ];
+    const grid=document.getElementById('app-grid');
+    for(const app of apps){const a=document.createElement('a');a.className='card';a.href=app.url;a.target='_blank';a.rel='noopener noreferrer';a.setAttribute('aria-label',`${app.title} (se abre en una pestaña nueva)`);const icon=document.createElement('div');icon.className='icon';icon.setAttribute('aria-hidden','true');icon.textContent=app.icon;const h=document.createElement('h3');h.textContent=app.title;const p=document.createElement('p');p.textContent=app.description;const arrow=document.createElement('span');arrow.className='arrow';arrow.setAttribute('aria-hidden','true');arrow.textContent='↗';a.append(icon,h,p,arrow);grid.append(a)}
+    document.getElementById('count').textContent=`${apps.length} recursos disponibles`;
+  </script>
 </body>
 </html>
